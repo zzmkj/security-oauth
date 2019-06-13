@@ -8,22 +8,21 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 /**
- * @ClassName RolePermisson
- * @Description 角色--权限 中间表
+ * @ClassName UserRole
+ * @Description 用户--角色--中间表
  * @Author zzm
- * @Data 2019/6/6 12:15
+ * @Data 2019/6/12 18:42
  * @Version 1.0
  */
-@Data
 @Entity
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class RolePermisson {
-
+public class UserRole {
     @Id
     private String id;
 
-    private String roleId;
+    private String userId;
 
-    private String permissonId;
+    private String roleId;
 }

@@ -3,13 +3,12 @@ package com.security.oauth.domain;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Transient;
 import java.io.Serializable;
-import java.util.Collection;
 import java.util.List;
 
 /**
@@ -32,11 +31,12 @@ public class User implements UserDetails, Serializable {
 
     private String password;
 
+    @Transient
     private List<Role> authorities; //用户权限信息
 
     @Override
-    public Collection<? extends GrantedAuthority> getAuthorities() {
-        return null;
+    public List<Role> getAuthorities() {
+        return authorities;
     }
 
     @Override

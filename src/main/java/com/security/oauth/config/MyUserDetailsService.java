@@ -1,4 +1,4 @@
-package com.security.oauth.service;
+package com.security.oauth.config;
 
 import com.security.oauth.domain.Role;
 import com.security.oauth.domain.User;
@@ -35,10 +35,12 @@ public class MyUserDetailsService implements UserDetailsService {
         //查数据库
         User user = userRepository.findByUsername(username);
         if (user != null) {
-            //查询用户权限信息----多表查询
+            //查询用户权限信息
             List<Role> roleList = roleRepository.findRolesByUserId(user.getId());
+            log.info("【该用户角色】 = {}", roleList);
             user.setAuthorities(roleList);
         }
+        log.info("【用户】 = {}", user);
         return user;
     }
 }

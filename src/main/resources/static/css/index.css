@@ -1,0 +1,241 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+
+/* Padding below the footer and lighter body text */
+
+body {
+    /* padding-top: 3rem; */
+    padding-bottom: 3rem;
+    color: #5a5a5a;
+}
+
+.nav-center {
+    margin-left: 30%;
+}
+
+.image-logo {
+    width: 200px;
+    /* margin-left: 18px; */
+}
+
+.logo {
+    width: 30%;
+}
+
+.nav-item {
+    padding-left: 14px;
+    font-family: Microsoft Yahei;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+
+.carousel {
+    margin-bottom: 4rem;
+}
+
+/* Since positioning the image, we need to help out the caption */
+
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+
+.carousel-item {
+    height: 32rem;
+    background-color: #777;
+}
+
+.carousel-item>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.marketing h2 {
+    font-weight: 400;
+}
+
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+    margin: 5rem 0;
+    /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+}
+
+.font-index {
+    font-family: Microsoft Yahei;
+    margin-right: 10px;
+    letter-spacing: 1.5px;
+}
+
+.keyfont {
+    margin: 0 auto;
+    font-weight: bold !important;
+}
+
+.info-keyword {
+    font-family: "Microsoft Yahei";
+    line-height: 35px;
+}
+
+.formline {
+    line-height: 80px !important;
+}
+
+.form-control {
+    display: inline;
+}
+
+.submit-style {
+    margin-top: 15px
+}
+
+.ul-top {
+    margin-left: 90px;
+}
+
+.btn-outline-secondary {
+    margin-top: 6px;
+}
+
+.enroo_specialties {
+    background-color: #f6f6f6;
+    position: relative;
+    align-items: center;
+    z-index: 444;
+    padding-bottom: 50px;
+
+}
+
+.professional_div {
+    width: 100%;
+    max-width: 1200px !important;
+    background: white;
+    position: relative;
+    bottom: 45px;
+    padding: 50px;
+    margin: -60px auto;
+}
+
+.professional_title {
+    width: 100%;
+}
+
+.professional_div h3 {
+    display: inline;
+    margin: 0;
+}
+
+.professional_div .professional_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.professional_div .professional_title>span {
+    padding-left: 20px;
+    color: #999;
+}
+
+.professional_div hr {
+    margin: 30px 0 20px 0;
+}
+
+
+.professional_child_div {
+    overflow: hidden;
+}
+
+.professional_child_div div {
+    float: left;
+    padding: 15px;
+    width: 137.5px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.professional_child_div div:hover {
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+.professional_enroo_right span {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #b7b2b2;
+    letter-spacing: .5px;
+    font-weight: 500;
+}
+
+.index_new_a {
+    color: #4c4c4c;
+    transition: all 0.3s;
+}
+
+.enroo_keyword {
+    text-align: center;
+    margin-top: 21px;
+}
+
+.enroo_keyword span {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: .5px;
+}
+
+.enroo_keyword_span_right {
+    padding-right: 15px;
+}
